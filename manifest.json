@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Orbi Connector",
+    "version": "1.0",
+    "description": "Orbi Connector for Orbi.",
+    "permissions": ["desktopCapture", "scripting", "activeTab"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "512": "icon.png"
+      }
+    },
+    "icons": {
+        "512": "icon.png"
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+    }
+  }
+  

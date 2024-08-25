@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Connector</title>
+    <style>
+        body {
+            width: 300px;
+            height: 150px;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            background-color: blueviolet;
+            color: white;
+        }
+        input, button {
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(203, 171, 234);
+            color: white;
+            padding: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>ORBI CONNECTOR</h1>
+    <input type="text" id="ipInput" placeholder="Enter WebSocket IP address">
+    <button id="connectBtn">Connect</button>
+
+    <script src="popup.js"></script>
+</body>
+</html>
