@@ -19,7 +19,7 @@ async function startScreenShare(ipInput) {
         const canvas = document.createElement('canvas');
         const context = canvas.getContext('2d');
 
-        const ws = new WebSocket(`ws://${ipInput}:8000`);
+        const ws = new WebSocket(`ws://${ipInput}`);
 
         setInterval(() => {
             console.log("Sending screen");
