@@ -8,7 +8,7 @@
     <style>
         body {
             width: 300px;
-            height: 150px;
+            height: 200px;
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
@@ -16,16 +16,35 @@
             flex-direction: column;
             margin: 0;
             padding: 0;
-            background-color: blueviolet;
-            color: white;
+            background-color: #eff1f5;
+            color: #4c4f69;
+            border: 3px solid #5c5f77;
         }
         input, button {
             border-radius: 5px;
             border: none;
-            background-color: rgb(203, 171, 234);
-            color: white;
-            padding: 5px;
-            margin: 10px 0;
+            background-color: #ccd0da;
+            padding: 7px;
+            margin: 7px 0;
+            transition: .5s;
+        }
+        button:hover, input:hover {
+            background-color:#5c5f77;
+            color: #eff1f5;
+            transition: .25s;
+        }
+        ::placeholder {
+            color: #4c4f69;
+            transition: .25s;
+        }
+        input:hover::placeholder {
+            color: #eff1f5;
+            transition: .25s;
+        }
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #179299;
         }
     </style>
 </head>
@@ -33,6 +52,7 @@
     <h1>ORBI CONNECTOR</h1>
     <input type="text" id="ipInput" placeholder="Enter WebSocket IP address">
     <button id="connectBtn">Connect</button>
+    <p><a href="https://github.com/OrbiAI/Orbi-ChromeOS" target="_blank" rel="noopener noreferrer">Orbi ChromeOS</a> | <a href="https://github.com/OrbiAI/Orbi-ChromeOS-Extension" target="_blank" rel="noopener noreferrer">GitHub</a></p>
 
     <script src="popup.js"></script>
 </body>

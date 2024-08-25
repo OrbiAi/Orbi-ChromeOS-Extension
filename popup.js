@@ -2,7 +2,7 @@ document.getElementById("connectBtn").addEventListener("click", function() {
     const ipInput = document.getElementById("ipInput").value;
     if (ipInput) {
         // Open a new popup window
-        const newWindow = window.open("", "IPConnectorPopup", "width=800,height=600,menubar=no,toolbar=no,location=no,status=no,resizable=yes,scrollbars=yes");
+        const newWindow = window.open("", "IPConnectorPopup", "width=800,height=600,menubar=no,toolbar=no,location=no,status=no,resizable=no,scrollbars=no");
         
         // Write basic HTML to the new window and include the external JS file
         newWindow.document.write(`
